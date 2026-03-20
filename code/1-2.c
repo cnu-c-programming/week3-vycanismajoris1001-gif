@@ -4,19 +4,19 @@ void print();
 int square(int n);
 
 int main() {
-  print();
+	print();
 
-  int num = 5;
-  int result = square(num);
-  printf("%d %d\n", num, result);
+	int num = 5;
+	int result = square(num);
+	printf("%d %d\n", num, result);
 
-  return 0
+	return 0;
 }
 
-void printf() {
-  printf("Welcome to Computer Programming 03 Lap!\n");
+void print() {
+	printf("Welcome to Computer Programming 03 Lap!\n");
 }
 
 int square(int n) {
-  return n*n;
+	return n * n;
 }
