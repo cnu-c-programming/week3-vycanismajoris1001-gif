@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 int call_count () {
-  int *count = 0;
+  static int count = 0;
   return ++count;
 }
 int main() {
