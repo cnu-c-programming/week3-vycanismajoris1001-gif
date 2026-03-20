@@ -2,10 +2,14 @@
 #include <stdarg.h>
 
 int max_of (int count, ...) {
-  va_list = ap;
+  va_list ap;
   va_start(ap, count);
-  for(int i=0;i<count;i++) 
-    val = va_arg(ap, int);
+  int max = va_arg(ap, int);
+  for(int i=0;i<count;i++) {
+    if (i>max) {
+      max = i;
+    }
+  }
   va_end(ap);
   return val;
 }
