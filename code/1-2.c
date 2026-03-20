@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void print();
-int square(int n);
+int square();
 
 int main() {
 	print();
