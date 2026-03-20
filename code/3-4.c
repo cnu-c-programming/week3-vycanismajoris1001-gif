@@ -3,21 +3,21 @@
 
 int max_of(int count, ...) {
     va_list ap;
+    
     va_start(ap, count);
-.
+
     int max = va_arg(ap, int); 
 
-.
     for (int i = 1; i < count; i++) {
-        int cur = va_arg(ap, int); 
-        if (cur > max) {          
-            max = cur;            
+        int current = va_arg(ap, int); 
+        if (current > max) {           
+            max = current;             
         }
     }
 
     va_end(ap);
 
-    return max; 
+    return max;
 }
 
 int main() {
